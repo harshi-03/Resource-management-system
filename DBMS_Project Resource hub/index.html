@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link rel="stylesheet" href="sty.css">
+    <style>
+    .button2{
+    border-radius:25px; 
+    height:30px;
+    width: 370px;
+    padding-left: 0px;
+    font-family: sans-serif;
+    background-color:#54B435;
+    color:#fff;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+body{
+  margin: 0;
+  padding: 0;
+  /* background-image:url("https://imgs.search.brave.com/D-rvOeRTIFW5vePuMw7ROVrNHsKWcdALrE0gMwLak4E/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC52/blRCZjFFd0ZvNnBH/ckxkVUhRQXJRSGFF/byZwaWQ9QXBp"); */
+  height: 100vh;
+  overflow: hidden;
+  /* background-repeat: "no-repeat";
+  background-size:1080px; */
+  /* background-image: linear-gradient(#E6DDC4,#678983); */
+  background-image: linear-gradient(to right,#fff,#AE431E,#86340A);
+}
+.reg {
+    padding-left: 20px;
+    /* padding-top: 5px; */
+    padding-bottom: 10px;
+    background-color: rgba(0,0,0,1);
+    font-size: 15px;
+    /* border-radius: 10px; */
+    border: 1px solid(255,255,255,0.3);
+    box-shadow: 2px 2px 15px
+     rgba(0,0,0,0.5);
+    color:#fff;
+    width:360px;
+
+}
+.reg1{
+    padding-left: 20px;
+    /* padding-top: 5px; */
+    padding-bottom: 10px;
+     background-image:url("https://imgs.search.brave.com/-Q5g0D_ggZSVyJ_E_2BIK4VD4Yz_uXBXde4GHI0VyFc/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC40/SF9PeG1ZMGtGTUNk/bjhzZ3d2NWRBSGFF/SyZwaWQ9QXBp");
+     font-size: 15px;
+     border-radius: 10px;
+     border: 1px solid(255,255,255,0.3);
+     box-shadow: 2px 2px 15px
+     rgba(0,0,0,0.5);
+     background-repeat: "no-repeat";
+      background-size:1080px;
+
+}
+.reg3{
+    /* padding-top: 5px; */
+    padding-bottom: 10px;
+     background-color:#Fff;
+     width:350px;
+     height:40px;
+     font-size: 15px;
+     border-radius: 10px;
+     border: 1px solid(255,255,255,0.3);
+     box-shadow: 2px 2px 15px
+     rgba(0,0,0,0.5);
+     color:black;
+
+}
+    </style>
+</head>
+<body>
+    <form action="./submit.php" method="post">
+                <div class="main">
+                <div class="reg1">
+                    <h1 class="reg3">Registration form</h1>
+                    <br>
+                            <label for="firstname" aria-placeholder="firstname">FIRST NAME:</label>
+                            <br><input class ="reg" type="text"  id="firstname" name="first_name" required/>    
+                        <br><br>
+                            <label for="lastname">LAST NAME:</label>
+                            <br>
+                            <input  class ="reg" type="text" id="lastname" class="reg" name="last_name" required/>
+                            <br>  <br>
+                            <label for="gender">GENDER:</label>
+                            <br>
+                            <br>
+                            <label for="male" style="margin-right:1em;"><input type="radio" name="gender" value="male" id="male"/>Male</label>
+                            <label for="female" style="margin-right:1em;"><input  type="radio" name="gender" value="female" id="female"/>female</label>
+                            <label for="others" ><input type="radio" name="gender" value="others" id="others"/>others</label>
+                        <br><br>
+                        <label for="email">E-MAIL:</label>
+                        <br>
+                        <input class ="reg" type="email" id="email" name="email" required/>
+                       
+                    <br><br>
+                    <label for="phonenumber">PHONE NUMBER:</label>
+                    <br>
+                    <input class ="reg" type="text"  id="phonenumber" name="phone_number" required/>                
+                <br><br>
+                <label for="username">USER-NAME:</label>
+                <br>
+                <input class ="reg" type="text" id="username" name="user_name" required/>         
+            <br><br>    
+            <label for="password">PASSWORD:</label>
+            <br>
+            <input class ="reg" type="password"  id="Password" name="password" minlength="6" required/>
+                   <br><br>
+                    <button  class="button2" id="submit" name="save" onclick="hel()">Register</button>
+                </div>
+                <!-- <script>
+                    alert('Please register to login');</script> -->
+            </div>
+           </form>     
+</body>
+</html>

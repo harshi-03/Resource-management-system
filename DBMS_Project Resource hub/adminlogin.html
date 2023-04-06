@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Form</title>
+    <!-- <link rel="stylesheet" href="sty.css"> -->
+    <style>
+    .button {
+      border: none;
+      border-radius: 25px;
+      color:black;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+    
+    .button1 {
+      background-color:#2691d9; 
+      color: #000; 
+      border: 2px solid #000;
+    }
+    
+    .button1:hover {
+      background-color: #4CAF50;
+      color: black;
+    }
+    body{
+      background-image: url("https://imgs.search.brave.com/cd49gCVcRtRGxJ1DyWZOHSdW9nUHWrC3Djr2b_YC1W0/rs:fit:632:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC44/SjN2V3lIZ01GTExu/T1lTRzBrWUtRSGFG/aiZwaWQ9QXBp");
+      background-repeat: "no-repeat";
+      background-size:1080px;
+      margin:100px,auto,0px,auto;
+      
+    }
+    .hel{
+        color:#000;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background:rgba(0,0,0,0.8);
+  border-radius: 10px;
+  /* box-shadow: 10px 10px 15px rgba(0,0,0,0.05); */
+}
+h1{
+    color: #fff;
+}
+.center h1{
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #000000;
+}
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid #DC3535;
+  margin: 30px 0;
+}
+.txt_field input{
+  
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+}
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #DC3535;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #2691d9;
+  transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: #2691d9;
+  background-color: #fff;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+.signup_link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #DC3535;
+}
+.signup_link a{
+  color: #2691d9;
+  text-decoration: none;
+}
+.signup_link a:hover{
+  text-decoration: underline;
+}
+
+
+    
+    </style>
+  </head>
+  <body class="body">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="study.html"><img src="https://media.giphy.com/media/BS4pv5OYGjujrrjVJ9/giphy.gif" alt="hello" style="width:100px; height: 70px; padding-left: px;"></a>
+    </nav>
+
+    <div class="center">
+      <h1>ADMIN LOGIN</h1>
+      <form action="adminlogin.php" method="post">
+        <div class="txt_field">
+          <input class="hel" type="text" required name="user">
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+          <input class="hel" type="password" required name="pass1">
+          <span></span>
+          <label>Password</label>
+        </div>
+        <!-- <div class="pass">Forgot Password?</div> -->
+        <!-- <button value="Login" type="submit"> <a href="first.html"></a></button> -->
+        <center>
+        <button class="button button1" name="submit1">SUBMIT<a href="first.html"></a></button></button> </center>
+        <div class="signup_link">
+          Not a member? <a href="index.html">Signup</a>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
